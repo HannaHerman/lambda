@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Gentium";
+    src: url(../fonts/gentium_book_basic_bold.ttf); 
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/lato_regular.ttf); 
+}
+@font-face {
+    font-family: "Yeseva";
+    src: url(../fonts/yeseva_one_regular.otf); 
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/opensans_regular.ttf); 
+}
+body {
+    background-color: #fff;
+    font-family: "Yeseva";
+    font-size: 16px;
+    color: #fff;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-family: "Yeseva";
+    font-size: 36px;
+    opacity: 0.9;
+    text-align: center;
+}
