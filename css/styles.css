@@ -288,7 +288,7 @@ margin-bottom: 19px;
 .reviews-block p:first-of-type {
 font-family: "Gentium";
 font-size: 25px;
-margin-top: 22px;
+margin-top: 16px;
 line-height: 1.8;
 text-align: center;
 }
@@ -302,4 +302,99 @@ text-align: center;
   position: absolute;
   left: 4%;
   top: 31%;
+}
+
+/* reservations */
+.reservations-container {
+  background-image: url(../media/about_background.png);
+  background-position: center; 
+}
+.reservations-container .container {
+  padding: 102px 70px 100px 68px;
+}
+.reservations-image {
+  margin-right: 30px;
+}
+.reservations-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 70px;
+}
+.reservations-block h3 {
+  font-family: "Yeseva";
+  font-size: 36px;
+  color: goldenrod;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.reservations-block img {
+  width: 245px;
+  height: 24px;
+  margin-bottom: 24px;
+}
+.reservations-block p {
+  max-width: 430px;
+  font-family: "Lato";
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+.reservations-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 430px;
+  margin-top: 34px;
+}
+.reservations-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.reservations-form label {
+  font-family: "Open Sans";
+  color: goldenrod;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.reservations-form input {
+  height: 35px;
+  width: 200px;
+  padding-left: 14px;
+  box-sizing: border-box;
+  font-style: italic;
+}
+.reservations-form input:focus {
+  outline: 1px solid goldenrod;
+}
+.reservations-option option:first-of-type {
+  color: #7c7c7c;
+}
+.reservations-form-name, .reservations-form-date {
+  margin-right: 30px;
+}
+.reservations-option {
+  height: 35px;
+  width: 199px;
+  padding-left: 14px;
+  font-style: italic;
+  color: #7c7c7c;
+}
+.reservations-block button {
+  height: 35px;
+  width: 200px;
+  margin-top: 8px;
+  margin-left: 5px;
+  background-color: goldenrod;
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: white;
+  border: none;
+  transition-duration: .3s;
+}
+.reservations-block button:hover {
+  transform: scale(1.1);
 }

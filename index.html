@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LAMBDA</title>
+    <link rel="stylesheet" href="./css/datepicker.css">
     <link rel="stylesheet" href="./css/styles.css"/>
     </head>
     <link rel="shortcut icon" type="image/png" href="./media/lambda.png"/>
@@ -203,6 +204,51 @@
             </div>
         </div>
     </section>
-    
+    <section class="reservations-container">
+        <div class="container">
+            <div class="reservations-image">
+                <img src="./media/reservations_image_1.jpg" alt="reservations image">
+            </div>
+            <div class="reservations-image">
+                <img src="./media/reservations_image_2.jpg" alt="reservations image">
+            </div>
+            <div class="reservations-block">
+                <h3>Just the right food</h3>
+                <img src="./media/about_divider.png" alt="decorate image">
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.</p>
+                <p>Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+                <form class="reservations-form" id="order" action="">
+                    <div class="reservations-form-name">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="user-name" placeholder="your name *" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="email_address" placeholder="your email *" required>
+                    </div>
+                    <div class="reservations-form-date">
+                        <label for="date">Date</label>
+                        <input type='text' class="datepicker-here" data-position="right top" id="date" placeholder="date *">
+                    </div>
+                    <div>
+                        <label for="num">Party number</label>
+                        <select class="reservations-option" id="num" name="party-number">
+                            <option class="one" selected disabled hidden>party number</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                        </select>
+                    </div>
+                </form>
+                <button type='submit' form="order">Book now!</button>
+            </div>
+        </div>
+    </section>
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/datepicker.js"></script>
+<script src="./js/scripts.js"></script>
 </body>
 </html>
