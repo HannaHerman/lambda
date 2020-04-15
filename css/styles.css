@@ -17,6 +17,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 .nav-container {
   display: flex;
@@ -36,15 +37,19 @@ nav a {
   font-size: 21px;
   color: #fff;
   padding: 13px;
+  position: relative;
+}
+nav a:focus {
+  outline: none;
 }
 nav a:hover {
   color: rgb(235, 235, 235);
   text-shadow: 2px 2px 2px rgba(121, 120, 111, 0.49);
 }
-nav .active-menu-item {
+/* nav .active-menu-item {
   border-top: 3px solid #c8c5bd;
   border-bottom: 3px solid transparent;
-}
+} */
 .social-container {
   align-items: center;
   margin-left: 5px;
@@ -100,6 +105,13 @@ transition: .6s;
   background-color: rgba(0, 0, 0, 0.6);
   border: black solid 1px;
 }
+.header-fixed {
+  position: fixed;
+  z-index: 50;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(29, 24, 24, 0.55) 45%);
+  height: 80px;
+  width: 100%;
+}
 /*about*/
 .about-container {
   background-image: linear-gradient(to top left, rgba(1, 1, 1, 0.05), rgba(255,255,255, 0)), url(../media/about_background.png);
@@ -141,17 +153,17 @@ transition: .6s;
 .about-columns-two img {
   flex-shrink: 0;
 }
-/*ingridients*/
-.ingridients-container {
+/*ingredients*/
+.ingredients-container {
   background-image: url(../media/ingredients_background.jpg);
   background-size: cover;
 }
-.ingridients-container .container {
+.ingredients-container .container {
   justify-content: flex-end;
   padding-top: 100px;
 	padding-bottom: 100px;
 }
-.ingridients-info {
+.ingredients-info {
   width: 570px;
   background-image: url(../media/ingredients_background_2.png);
   display: flex;
@@ -160,25 +172,25 @@ transition: .6s;
   padding: 75px;
   box-sizing: border-box;
 }
-.ingridients-info h2 {
+.ingredients-info h2 {
   color: white;
 }
-.ingridients-dividor {
+.ingredients-dividor {
   width: 245px;
   height: 25px;
   margin-top: 17px;
 }
-.ingridients-info p {
+.ingredients-info p {
   font-family: "Lato";
   font-size: 16px;
 	line-height: 1.5;
   text-align: center;
   margin-top: 23px;
 }
-.ingridients-images {
+.ingredients-images {
   margin-top: 70px;
 }
-.ingridients-images img {
+.ingredients-images img {
   width: 100px;
   height: 100px;
   border-radius: 55px;
