@@ -376,6 +376,16 @@ text-align: center;
 .reservations-form-name, .reservations-form-date {
   margin-right: 30px;
 }
+.reservations-form-date {
+  position: relative;
+}
+.reservations-form-date img {
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  top: 57%;
+  right: 6%;
+}
 .reservations-option {
   height: 35px;
   width: 199px;
@@ -397,4 +407,45 @@ text-align: center;
 }
 .reservations-block button:hover {
   transform: scale(1.1);
+}
+
+/* footer */
+.footer-container {
+  background-color: #191919;
+}
+.footer-container .container {
+  padding: 61px 84px 70px 10px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.footer-container h4 {
+  font-family: "Yeseva";
+  font-size: 21px;
+  text-align: center;
+}
+.footer-container p {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+}
+.footer-container p:first-of-type {
+  margin-top: 16px;
+}
+.footer-about, .footer-open, .footer-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-about {
+  max-width: 350px;
+}
+.footer-open {
+  margin-right: 76px;
+}
+.footer-dividor {
+  margin-top: 18px;
+}
+.footer-icons {
+  margin-top: 50px;
 }
